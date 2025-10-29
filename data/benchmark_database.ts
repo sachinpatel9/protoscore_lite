@@ -1,0 +1,36 @@
+import { BenchmarkProtocol } from '../types';
+
+export const benchmarkDatabase: BenchmarkProtocol[] = [
+  // 15 Interventional Protocols
+  { protocol_id: 'INT001', study_type: 'Interventional', phase: 1, final_pcs_score: 25.5 },
+  { protocol_id: 'INT002', study_type: 'Interventional', phase: 1, final_pcs_score: 31.2 },
+  { protocol_id: 'INT003', study_type: 'Interventional', phase: 1, final_pcs_score: 28.9 },
+  { protocol_id: 'INT004', study_type: 'Interventional', phase: 2, final_pcs_score: 45.1 },
+  { protocol_id: 'INT005', study_type: 'Interventional', phase: 2, final_pcs_score: 52.8 },
+  { protocol_id: 'INT006', study_type: 'Interventional', phase: 2, final_pcs_score: 48.3 },
+  { protocol_id: 'INT007', study_type: 'Interventional', phase: 2, final_pcs_score: 55.0 },
+  { protocol_id: 'INT008', study_type: 'Interventional', phase: 3, final_pcs_score: 72.4 },
+  { protocol_id: 'INT009', study_type: 'Interventional', phase: 3, final_pcs_score: 68.9 },
+  { protocol_id: 'INT010', study_type: 'Interventional', phase: 3, final_pcs_score: 75.1 },
+  { protocol_id: 'INT011', study_type: 'Interventional', phase: 3, final_pcs_score: 80.5 },
+  { protocol_id: 'INT012', study_type: 'Interventional', phase: 3, final_pcs_score: 78.2 },
+  { protocol_id: 'INT013', study_type: 'Interventional', phase: 4, final_pcs_score: 40.3 },
+  { protocol_id: 'INT014', study_type: 'Interventional', phase: 4, final_pcs_score: 38.6 },
+  { protocol_id: 'INT015', study_type: 'Interventional', phase: 4, final_pcs_score: 42.1 },
+  // 15 Observational Protocols
+  { protocol_id: 'OBS001', study_type: 'Observational', phase: 'N/A', final_pcs_score: 18.2 },
+  { protocol_id: 'OBS002', study_type: 'Observational', phase: 'N/A', final_pcs_score: 22.4 },
+  { protocol_id: 'OBS003', study_type: 'Observational', phase: 'N/A', final_pcs_score: 20.1 },
+  { protocol_id: 'OBS004', study_type: 'Observational', phase: 'N/A', final_pcs_score: 25.9 },
+  { protocol_id: 'OBS005', study_type: 'Observational', phase: 'N/A', final_pcs_score: 30.0 },
+  { protocol_id: 'OBS006', study_type: 'Observational', phase: 'N/A', final_pcs_score: 28.7 },
+  { protocol_id: 'OBS007', study_type: 'Observational', phase: 'N/A', final_pcs_score: 33.5 },
+  { protocol_id: 'OBS008', study_type: 'Observational', phase: 'N/A', final_pcs_score: 35.2 },
+  { protocol_id: 'OBS009', study_type: 'Observational', phase: 'N/A', final_pcs_score: 31.8 },
+  { protocol_id: 'OBS010', study_type: 'Observational', phase: 'N/A', final_pcs_score: 39.9 },
+  { protocol_id: 'OBS011', study_type: 'Observational', phase: 'N/A', final_pcs_score: 41.3 },
+  { protocol_id: 'OBS012', study_type: 'Observational', phase: 'N/A', final_pcs_score: 37.5 },
+  { protocol_id: 'OBS013', study_type: 'Observational', phase: 'N/A', final_pcs_score: 44.8 },
+  { protocol_id: 'OBS014', study_type: 'Observational', phase: 'N/A', final_pcs_score: 46.1 },
+  { protocol_id: 'OBS015', study_type: 'Observational', phase: 'N/A', final_pcs_score: 43.2 },
+];
