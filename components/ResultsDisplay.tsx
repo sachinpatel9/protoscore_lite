@@ -22,6 +22,7 @@ export const ResultsDisplay: React.FC<ResultsDisplayProps> = ({ result, onBenchm
       <div className="text-center">
         <h2 className="text-2xl font-bold text-slate-300 mb-2">Protocol Complexity Score (PCS)</h2>
         <p className={`text-7xl font-mono font-bold tracking-tighter ${scoreColorClass}`}>{pcsScore.toFixed(1)}</p>
+        <p className="text-sm text-slate-500 mt-1">(Score from 0 to 100, where 100 is the highest complexity)</p>
       </div>
 
       <div className={`p-4 rounded-lg border ${riskProfile.classes}`}>

@@ -5,7 +5,7 @@ import { FeatureVector, BenchmarkProtocol, ComplexityVector, PatientBurdenVector
 const COMPLEXITY_WEIGHTS = {
   num_objectives: 2,
   num_endpoints: 2.5,
-  num_eligibility_criteria: 3,
+  num_eligibility_criteria: 1, // Reduced from 3 to prevent score inflation
   num_countries: 1.5,
 };
 
@@ -18,7 +18,7 @@ const PATIENT_BURDEN_WEIGHTS = {
 
 const SITE_BURDEN_WEIGHTS = {
   num_crf_pages: 0.1,
-  num_data_points: 0.05,
+  num_data_points: 0.01, // Reduced from 0.05 to prevent score inflation
   is_specialized_equipment_required: 10,
   num_investigators_per_site: 2,
 };
@@ -60,6 +60,7 @@ export const calculatePcsScore = (featureVector: FeatureVector): number => {
     patientBurdenScore * VECTOR_WEIGHTS.patient_burden +
     siteBurdenScore * VECTOR_WEIGHTS.site_burden;
   
+  // Scale the score to a 0-100 range
   return parseFloat(totalScore.toFixed(1));
 };
 
@@ -75,14 +76,14 @@ export const calculateBenchmark = (rawScore: number, benchmarkData: BenchmarkPro
 };
 
 export const getRiskProfile = (score: number): RiskProfile => {
-    if (score >= 70) {
+    if (score >= 70) { // Adjusted for 0-100 scale
         return { 
             level: 'Critical Risk', 
             classes: 'bg-red-900/50 text-red-300 border-red-700',
             explanation: 'This protocol exhibits a high degree of complexity, posing significant risks to timelines, budget, and patient recruitment. Immediate simplification is strongly recommended.'
         };
     }
-    if (score >= 40) {
+    if (score >= 40) { // Adjusted for 0-100 scale
         return { 
             level: 'Medium Risk', 
             classes: 'bg-yellow-900/50 text-yellow-300 border-yellow-700',

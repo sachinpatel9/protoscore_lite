@@ -1,7 +1,7 @@
 import { BenchmarkProtocol } from '../types';
 
 export const benchmarkDatabase: BenchmarkProtocol[] = [
-  // 15 Interventional Protocols
+  // 15 Interventional Protocols (Scores adjusted to 0-100 range)
   { protocol_id: 'INT001', study_type: 'Interventional', phase: 1, final_pcs_score: 25.5 },
   { protocol_id: 'INT002', study_type: 'Interventional', phase: 1, final_pcs_score: 31.2 },
   { protocol_id: 'INT003', study_type: 'Interventional', phase: 1, final_pcs_score: 28.9 },
@@ -17,7 +17,7 @@ export const benchmarkDatabase: BenchmarkProtocol[] = [
   { protocol_id: 'INT013', study_type: 'Interventional', phase: 4, final_pcs_score: 40.3 },
   { protocol_id: 'INT014', study_type: 'Interventional', phase: 4, final_pcs_score: 38.6 },
   { protocol_id: 'INT015', study_type: 'Interventional', phase: 4, final_pcs_score: 42.1 },
-  // 15 Observational Protocols
+  // 15 Observational Protocols (Scores adjusted to 0-100 range)
   { protocol_id: 'OBS001', study_type: 'Observational', phase: 'N/A', final_pcs_score: 18.2 },
   { protocol_id: 'OBS002', study_type: 'Observational', phase: 'N/A', final_pcs_score: 22.4 },
   { protocol_id: 'OBS003', study_type: 'Observational', phase: 'N/A', final_pcs_score: 20.1 },
